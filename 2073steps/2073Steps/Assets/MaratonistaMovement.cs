@@ -8,7 +8,6 @@ public class MaratonistaMovement : MonoBehaviour
     public bool canJump = true;
     float jumpAmount = 15;
     float fallSpeed = 40;
-    float gameSpeed = 0f;
     bool jumped = false;
     bool inAir = false;
     bool isAlive = true;
@@ -29,7 +28,6 @@ public class MaratonistaMovement : MonoBehaviour
                 vel.y -= fallSpeed * Time.deltaTime;
                 playerRb.velocity = vel;
             }
-            transform.Translate(gameSpeed * Time.deltaTime, 0f, 0f);
         }
     }
 

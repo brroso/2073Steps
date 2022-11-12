@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour
 {
-    public float gamespeed = 7f; // Velocidade em que o jogo se move.
+    public float gameSpeed; // Velocidade em que o jogo se move.
     bool generatedGround = false;
 
     float cameraHeight;
@@ -16,12 +16,12 @@ public class Ground : MonoBehaviour
         cameraHeight = 2f * cam.orthographicSize;
         cameraWidth = cameraHeight * cam.aspect;
 
-        Debug.Log(cameraHeight + " " + cameraWidth);
+        gameSpeed = GameManager.gameSpeed;
     }
 
     private void FixedUpdate()
     {
-        transform.Translate(-gamespeed * Time.deltaTime, 0f, 0f);
+        transform.Translate(-gameSpeed * Time.deltaTime, 0f, 0f);
         // Debug.Log(transform.position);
 
         if (!generatedGround)
