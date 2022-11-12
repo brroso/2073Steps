@@ -4,8 +4,29 @@ using UnityEngine;
 
 public class FantasmaMovement : MonoBehaviour
 {
+    public Rigidbody2D playerRb;
     public bool isTangible = true;
+    private Sensor_Prototype m_groundSensor;
+    private bool m_grounded = false;
+    float fallSpeed = 40;
+    private Animator m_animator;
     // Update is called once per frame
+
+    void Start()
+    {
+        m_animator = GetComponent<Animator>();
+        m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Prototype>();
+    }
+
+    void FixedUpdate()
+    {
+        if (!m_grounded)
+        {
+            Vector2 vel = playerRb.velocity;
+            vel.y -= fallSpeed * Time.deltaTime;
+            playerRb.velocity = vel;
+        }
+    }
     void Update()
     {
         if (Input.GetButtonDown("Jump"))
@@ -28,6 +49,27 @@ public class FantasmaMovement : MonoBehaviour
                     spriteRenderer.color = new Color(1.0f, 1.0f, 1.0f, 1f);
                 }
             }
+        }
+        if (!m_grounded && m_groundSensor.State())
+        {
+            m_grounded = true;
+            m_animator.SetBool("Grounded", m_grounded);
+        }
+
+        //Check if character just started falling
+        if (m_grounded && !m_groundSensor.State())
+        {
+            m_grounded = false;
+            m_animator.SetBool("Grounded", m_grounded);
+        }
+    }
+
+    public void resetFantasma()
+    {
+        SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = new Color(1.0f, 1.0f, 1.0f, 1f);
         }
     }
 }

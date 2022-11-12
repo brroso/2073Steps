@@ -6,8 +6,6 @@ using UnityEngine.UIElements;
 public class PointCounter : MonoBehaviour
 {
     private Label distanceLabel;
-
-    private float distance;
     
     private void OnEnable()
     {
@@ -20,7 +18,7 @@ public class PointCounter : MonoBehaviour
 
     private void IncrementDistance()
     {
-        distance += GameManager.gameSpeed;
-        distanceLabel.text = $"Distance: {distance}";
+        GameManager.distance += GameManager.gameSpeed;
+        distanceLabel.text = $"Distance: {GameManager.distance}";
     }
 }

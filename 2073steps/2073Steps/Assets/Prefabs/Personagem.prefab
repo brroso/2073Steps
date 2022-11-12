@@ -281,35 +281,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5126507520524490402, guid: e481822248898d04e9808a3d3ca78e5a, type: 3}
   m_PrefabInstance: {fileID: 8651454947195291487}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7355969751070373057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4554589489156329981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 171f8e6b485672f4bbb1551f50529458, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  current_character: 0
-  maratonistaScript: {fileID: 519633595329680062}
-  cientistaScript: {fileID: 6239098615102166484}
-  fantasmaScript: {fileID: 5844863020639878313}
---- !u!114 &6239098615102166484
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4554589489156329981}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b188510385eb8224896fa82cd88de4c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 1507823600741279944}
 --- !u!114 &519633595329680062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -335,4 +306,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1876b76d5bf420d479ee2bc94e1cfb61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerRb: {fileID: 1507823600741279944}
   isTangible: 1
+--- !u!114 &6239098615102166484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554589489156329981}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b188510385eb8224896fa82cd88de4c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1507823600741279944}
+--- !u!114 &7355969751070373057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554589489156329981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 171f8e6b485672f4bbb1551f50529458, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  current_character: 0
+  maratonistaScript: {fileID: 519633595329680062}
+  cientistaScript: {fileID: 6239098615102166484}
+  fantasmaScript: {fileID: 5844863020639878313}

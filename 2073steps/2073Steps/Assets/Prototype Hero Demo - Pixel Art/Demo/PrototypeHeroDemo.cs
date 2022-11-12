@@ -84,10 +84,6 @@ public class PrototypeHeroDemo : MonoBehaviour {
         {
 
         }
-        else if (m_character == Character.Cowboy)
-        {
-
-        }
         else
         {
             m_animator.SetLayerWeight(0, 1);
