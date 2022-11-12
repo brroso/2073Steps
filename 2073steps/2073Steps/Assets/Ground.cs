@@ -22,7 +22,6 @@ public class Ground : MonoBehaviour
     private void FixedUpdate()
     {
         transform.Translate(-gameSpeed * Time.deltaTime, 0f, 0f);
-        // Debug.Log(transform.position);
 
         if (!generatedGround)
         {
