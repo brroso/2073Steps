@@ -10,10 +10,14 @@ public class Parallax : MonoBehaviour
     private float cameraHeight;
     private float cameraWidth;
 
+    private RectTransform imageRect;
+
     bool generatedBG = false;
 
     void Start()
     {
+        imageRect = GetComponent<RectTransform>();
+
         Camera cam = Camera.main;
         cameraHeight = 2f * cam.orthographicSize;
         cameraWidth = cameraHeight * cam.aspect;
@@ -23,7 +27,7 @@ public class Parallax : MonoBehaviour
         if (sprite)
         {
             sprite.sortingOrder = sortingOrder;
-            parallaxSpeed = sortingOrder * 0.3f;
+            parallaxSpeed = sortingOrder * GameManager.gameSpeed * 0.1f;
         }
     }
 
@@ -34,14 +38,14 @@ public class Parallax : MonoBehaviour
 
         if (!generatedBG)
         {
-            if (transform.position.x < -(cameraWidth / 2f))
+            if (transform.position.x < -(imageRect.rect.width / 2f))
             {
                 generateBG();
                 generatedBG = true;
             }
         }
 
-        if (transform.position.x < -(cameraWidth / 2))
+        if (transform.position.x < -imageRect.rect.width)
         {
             Destroy(gameObject);
         }
@@ -52,8 +56,8 @@ public class Parallax : MonoBehaviour
         GameObject bg = Instantiate(gameObject);
         Vector2 pos;
 
-        pos.x = cameraWidth * 1.5f;
-        pos.y = 6.43f;
+        pos.x = transform.position.x + (2f * imageRect.rect.width) + cameraWidth;
+        pos.y = transform.position.y;
 
         bg.transform.position = pos;
     }

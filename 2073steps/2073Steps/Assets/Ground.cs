@@ -10,8 +10,12 @@ public class Ground : MonoBehaviour
     float cameraHeight;
     float cameraWidth;
 
+    private RectTransform groundRect;
+
     private void Start()
     {
+        groundRect= GetComponent<RectTransform>();
+        
         Camera cam = Camera.main;
         cameraHeight = 2f * cam.orthographicSize;
         cameraWidth = cameraHeight * cam.aspect;
@@ -25,14 +29,14 @@ public class Ground : MonoBehaviour
 
         if (!generatedGround)
         {
-            if (transform.position.x < -(cameraWidth / 2f))
+            if (transform.position.x <= -(groundRect.rect.width / 2f))
             {
                 generateGround();
                 generatedGround = true;
             }
         }
 
-        if (transform.position.x < -(cameraWidth / 2))
+        if (transform.position.x <= -(groundRect.rect.width / 2f))
         {
             Destroy(gameObject);
         }
@@ -44,8 +48,8 @@ public class Ground : MonoBehaviour
         BoxCollider2D groCollider = gro.GetComponent<BoxCollider2D>();
         Vector2 pos;
 
-        pos.x = cameraWidth * 1.5f;
-        pos.y = 0f;
+        pos.x = cameraWidth + (groundRect.rect.width / 2f) - (gameSpeed * Time.deltaTime);
+        pos.y = transform.position.y;
 
         gro.transform.position = pos;
     }
