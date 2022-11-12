@@ -6,9 +6,9 @@ public class MaratonistaMovement : MonoBehaviour
 {
     public Rigidbody2D playerRb;
     public bool canJump = true;
-    float jumpAmount = 10;
+    float jumpAmount = 15;
     float fallSpeed = 40;
-    float gameSpeed = 7f;
+    float gameSpeed = 0f;
     bool jumped = false;
     bool inAir = false;
     bool isAlive = true;
