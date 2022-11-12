@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public static Character current_character;
     public static Character next_character;
     public static List<Character> characters;
+    public static float distance = 0;
 
     void Awake()
     {
@@ -26,9 +27,17 @@ public class GameManager : MonoBehaviour
         characters.RemoveAt(0);
     }
 
+    void Update()
+    {
+        if (distance % 49f == 0 & distance > 0)
+        {
+            NextState();
+            distance = 0;
+        }
+    }
+
     public static void NextState()
     {
-        gameSpeed += 0.2f;
         UpdateCharacter();
     }
 
@@ -65,6 +74,5 @@ public enum Character
 {
     Maratonista,
     Cientista,
-    Cowboy,
     Fantasma
 }
