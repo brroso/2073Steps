@@ -5,12 +5,20 @@ using UnityEngine;
 public class MaratonistaMovement : MonoBehaviour
 {
     public Rigidbody2D playerRb;
-    public bool canJump = true;
     float jumpAmount = 15;
     float fallSpeed = 40;
     bool jumped = false;
     bool inAir = false;
     bool isAlive = true;
+    private Animator m_animator;
+    private Sensor_Prototype m_groundSensor;
+    private bool m_grounded = false;
+
+    void Start()
+    {
+        m_animator = GetComponent<Animator>();
+        m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Prototype>();
+    }
 
     void FixedUpdate()
     {
@@ -34,22 +42,29 @@ public class MaratonistaMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Jump") & canJump)
+        //Check if character just landed on the ground
+        if (!m_grounded && m_groundSensor.State())
         {
-            jumped = true;
-            canJump = false;
+            m_grounded = true;
+            m_animator.SetBool("Grounded", m_grounded);
         }
-    }
 
-
-    //Detect collisions between the GameObjects with Colliders attached
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        //Check for a match with the specific tag on any GameObject that collides with your GameObject
-        if (collision.gameObject.tag == "Ground")
+        //Check if character just started falling
+        if (m_grounded && !m_groundSensor.State())
         {
-            inAir = false;
-            canJump = true;
+            m_grounded = false;
+            m_animator.SetBool("Grounded", m_grounded);
+        }
+
+        // -- Handle Animations --
+        //Jump
+        if (Input.GetButtonDown("Jump") && m_grounded)
+        {
+            m_animator.SetTrigger("Jump");
+            m_grounded = false;
+            m_animator.SetBool("Grounded", m_grounded);
+            jumped = true;
+            m_groundSensor.Disable(0.2f);
         }
     }
 }
