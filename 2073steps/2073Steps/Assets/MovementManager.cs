@@ -21,8 +21,8 @@ public class MovementManager : MonoBehaviour
         current_character = GameManager.current_character;
         if (getCurrentActiveScript() != current_character)
         {
-            enableCharacterScript(current_character);
             disableCharacterScript(getCurrentActiveScript());
+            enableCharacterScript(current_character);
         }
     }
 
@@ -53,7 +53,7 @@ public class MovementManager : MonoBehaviour
             cientistaScript.enabled = true;
         }
         else
-         {
+        {
             fantasmaScript.enabled = true;
         }
 
@@ -67,10 +67,12 @@ public class MovementManager : MonoBehaviour
         }
         else if (character == Character.Cientista)
         {
+            cientistaScript.resetCientista();
             cientistaScript.enabled = false;
         }
-        else
+        else if (character == Character.Fantasma)
         {
+            fantasmaScript.resetFantasma();
             fantasmaScript.enabled = false;
         }
     }

@@ -22,20 +22,17 @@ public class MaratonistaMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isAlive)
+        if (jumped == true)
         {
-            if (jumped == true)
-            {
-                playerRb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
-                jumped = false;
-                inAir = true;
-            }
-            if (inAir)
-            {
-                Vector2 vel = playerRb.velocity;
-                vel.y -= fallSpeed * Time.deltaTime;
-                playerRb.velocity = vel;
-            }
+            playerRb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
+            jumped = false;
+            inAir = true;
+        }
+        if (!m_grounded)
+        {
+            Vector2 vel = playerRb.velocity;
+            vel.y -= fallSpeed * Time.deltaTime;
+            playerRb.velocity = vel;
         }
     }
 
