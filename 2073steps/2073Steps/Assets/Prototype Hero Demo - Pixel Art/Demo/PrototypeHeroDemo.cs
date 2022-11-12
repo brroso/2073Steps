@@ -6,8 +6,7 @@ public class PrototypeHeroDemo : MonoBehaviour {
     [Header("Variables")]
     [SerializeField] float      m_maxSpeed = 4.5f;
     [SerializeField] float      m_jumpForce = 7.5f;
-    public enum                 m_characterList { Maratonista, Fantasma, Cientista, Cowboy };
-    public m_characterList      m_character;
+    public Character            m_character;
     [Header("Effects")]
     [SerializeField] GameObject m_RunStopDust;
     [SerializeField] GameObject m_JumpDust;
@@ -15,13 +14,10 @@ public class PrototypeHeroDemo : MonoBehaviour {
 
     private Animator            m_animator;
     private Rigidbody2D         m_body2d;
-    private Sensor_Prototype    m_groundSensor;
     private AudioSource         m_audioSource;
     private AudioManager_PrototypeHero m_audioManager;
-    private bool                m_grounded = false;
     private bool                m_moving = true; // Alterado para true para forçar o boneco a ser visto como sempre se mexendo.
     private int                 m_facingDirection = 1;
-    private float               m_disableMovementTimer = 0.0f;
 
     // Use this for initialization
     void Start ()
@@ -30,35 +26,16 @@ public class PrototypeHeroDemo : MonoBehaviour {
         m_body2d = GetComponent<Rigidbody2D>();
         m_audioSource = GetComponent<AudioSource>();
         m_audioManager = AudioManager_PrototypeHero.instance;
-        m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Prototype>();
-        m_character = m_characterList.Maratonista;
+        m_character = Character.Maratonista;
     }
 
     // Update is called once per frame
     void Update ()
     {
-        // Decrease timer that disables input movement. Used when attacking
-        m_disableMovementTimer -= Time.deltaTime;
-
-        //Check if character just landed on the ground
-        if (!m_grounded && m_groundSensor.State())
-        {
-            m_grounded = true;
-            m_animator.SetBool("Grounded", m_grounded);
-        }
-
-        //Check if character just started falling
-        if (m_grounded && !m_groundSensor.State())
-        {
-            m_grounded = false;
-            m_animator.SetBool("Grounded", m_grounded);
-        }
+        m_character = GameManager.current_character;
 
         // -- Handle input and movement --
         float inputX = 0.0f;
-
-        if (m_disableMovementTimer < 0.0f)
-            inputX = Input.GetAxis("Horizontal");
 
         // GetAxisRaw returns either -1, 0 or 1
         float inputRaw = Input.GetAxisRaw("Horizontal");
@@ -91,23 +68,23 @@ public class PrototypeHeroDemo : MonoBehaviour {
         m_animator.SetFloat("AirSpeedY", m_body2d.velocity.y);
 
         // Escolhe a layer do Animator para o personagem desejado
-        if (m_character == m_characterList.Maratonista)
+        if (m_character == Character.Maratonista)
         {
             m_animator.SetLayerWeight(1, 1);
             m_animator.SetLayerWeight(0, 0);
             m_animator.SetLayerWeight(2, 0);
         }
-        else if (m_character == m_characterList.Fantasma)
+        else if (m_character == Character.Fantasma)
         {
             m_animator.SetLayerWeight(2, 1);
             m_animator.SetLayerWeight(0, 0);
             m_animator.SetLayerWeight(1, 0);
         }
-        else if (m_character == m_characterList.Cientista)
+        else if (m_character == Character.Cientista)
         {
 
         }
-        else if (m_character == m_characterList.Cowboy)
+        else if (m_character == Character.Cowboy)
         {
 
         }
@@ -118,19 +95,8 @@ public class PrototypeHeroDemo : MonoBehaviour {
             m_animator.SetLayerWeight(2, 0);
         }
 
-        // -- Handle Animations --
-        //Jump
-        if (Input.GetButtonDown("Jump") && m_grounded && m_disableMovementTimer < 0.0f)
-        {
-            m_animator.SetTrigger("Jump");
-            m_grounded = false;
-            m_animator.SetBool("Grounded", m_grounded);
-            m_body2d.velocity = new Vector2(m_body2d.velocity.x, m_jumpForce);
-            m_groundSensor.Disable(0.2f);
-        }
-
         //Run
-        else if(m_moving)
+        if(m_moving)
             m_animator.SetInteger("AnimState", 1);
 
         //Idle
