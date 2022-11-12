@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="width: 35%; height: 10%; font-size: 24px; flex-direction: row;">
+        <ui:Label text="Distance: 0" display-tooltip-when-elided="true" name="distance" style="width: auto; -unity-text-align: middle-left; -unity-font: url(&apos;project://database/Assets/Art/PixelColeco-4vJW.ttf?fileID=12800000&amp;guid=a2ff4fdbd6e4ccd4dae792ffe77a3568&amp;type=3#PixelColeco-4vJW&apos;); -unity-font-definition: none; -unity-text-outline-width: 0; font-size: 36px; color: rgba(255, 255, 255, 255); -unity-font-style: normal; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; padding-left: 12px; padding-right: 0;" />
+    </ui:VisualElement>
+</ui:UXML>
