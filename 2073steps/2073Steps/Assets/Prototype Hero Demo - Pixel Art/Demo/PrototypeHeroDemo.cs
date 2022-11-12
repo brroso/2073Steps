@@ -32,7 +32,7 @@ public class PrototypeHeroDemo : MonoBehaviour {
         m_audioManager = AudioManager_PrototypeHero.instance;
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Prototype>();
         m_character = m_characterList.Maratonista;
-}
+    }
 
     // Update is called once per frame
     void Update ()
