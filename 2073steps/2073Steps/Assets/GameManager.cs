@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     public static void NextState()
     {
+        gameSpeed += 0.2f;
         UpdateCharacter();
     }
 
@@ -42,8 +43,6 @@ public class GameManager : MonoBehaviour
             Shuffle(characters);
             characters.Remove(next_character);
         }
-
-        gameSpeed *= 1.2f;
 
         Debug.Log(current_character + " " + next_character + " " + gameSpeed);
     }
