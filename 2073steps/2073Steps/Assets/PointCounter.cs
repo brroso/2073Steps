@@ -6,14 +6,17 @@ using UnityEngine.UIElements;
 public class PointCounter : MonoBehaviour
 {
     private Label distanceLabel;
+    private bool checkpointControl;
     
     private void OnEnable()
     {
         var rootVisualElement = GetComponent<UIDocument>().rootVisualElement;
+        rootVisualElement.Q("checkpoint").style.display = DisplayStyle.None;
 
         distanceLabel = rootVisualElement.Q<Label>("distance");
 
         InvokeRepeating("IncrementDistance", 0.5f, 1f);
+
     }
 
     private void Update()
@@ -38,11 +41,32 @@ public class PointCounter : MonoBehaviour
             rootVisualElement.Q("icon_cientista").style.display = DisplayStyle.None;
             rootVisualElement.Q("icon_fantasma").style.display = DisplayStyle.Flex;
         }
+
+        if (GameManager.distance >= (2073 - (GameManager.gameSpeed * 10)))
+        {
+            checkpointDisplay();
+        }
+        else
+        {
+            checkpointHide();
+        }
     }
 
     private void IncrementDistance()
     {
         GameManager.distance += GameManager.gameSpeed * 10;
         distanceLabel.text = $"Distance: {GameManager.distance}";
+    }
+
+    public void checkpointDisplay()
+    {
+        var rootVisualElement = GetComponent<UIDocument>().rootVisualElement;
+        rootVisualElement.Q("checkpoint").style.display = DisplayStyle.Flex;
+    }
+
+    public void checkpointHide()
+    {
+        var rootVisualElement = GetComponent<UIDocument>().rootVisualElement;
+        rootVisualElement.Q("checkpoint").style.display = DisplayStyle.None;
     }
 }

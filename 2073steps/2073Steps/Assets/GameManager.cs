@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,8 +20,8 @@ public class GameManager : MonoBehaviour
     public static AudioSource soundtrack;
 
     
-    public static GameObject distanceUI;
     public static bool gameJustStarted = true;
+    public static GameObject distanceUI;
     public GameObject distanceUIObj;
 
     public static float minDistToSpawnObstacle = 280f;
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
     {
         distanceUI = distanceUIObj;
         soundtrack = soundtrackObj;
+
         Instance = this;
 
         distance += debugDistance;
@@ -71,6 +73,7 @@ public class GameManager : MonoBehaviour
             NextState();
             distance = 0;
         }
+
     }
 
     public static void NextState()

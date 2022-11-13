@@ -32,8 +32,8 @@ public class Parallax : MonoBehaviour
             sprite.sortingOrder = sortingOrder;
             parallaxSpeed = sortingOrder * GameManager.gameSpeed * 0.1f;
         }
+        
         transform.Translate(-parallaxSpeed * Time.deltaTime, 0f, 0f);
-        // Debug.Log(transform.position);
 
         if (!generatedBG)
         {

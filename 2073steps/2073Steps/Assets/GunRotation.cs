@@ -9,7 +9,6 @@ public class GunRotation : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(transform.eulerAngles.z);
         if (goingUp)
         {
             if  (transform.eulerAngles.z <= 305f) 

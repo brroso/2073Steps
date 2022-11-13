@@ -51,7 +51,7 @@ public class Ground : MonoBehaviour
         BoxCollider2D groCollider = gro.GetComponent<BoxCollider2D>();
         Vector2 pos;
 
-        pos.x = cameraWidth + (groundRect.rect.width / 2f) - (gameSpeed * Time.deltaTime);
+        pos.x = cameraWidth + (groundRect.rect.width / 2f) - (10 + gameSpeed * Time.deltaTime);
         pos.y = transform.position.y;
 
         gro.transform.position = pos;

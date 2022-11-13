@@ -20,8 +20,6 @@ public class Roof : MonoBehaviour
         cameraHeight = 2f * cam.orthographicSize;
         cameraWidth = cameraHeight * cam.aspect;
 
-        Debug.Log(cameraWidth);
-
         if (spawn_point)
             generateRoof(roofPrefab);
         else
