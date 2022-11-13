@@ -8,6 +8,7 @@ public class MovementManager : MonoBehaviour
     public MaratonistaMovement maratonistaScript;
     public CientistaMovement cientistaScript;
     public FantasmaMovement fantasmaScript;
+    public Roof cientistaRoofStart;
 
     void Start()
     {
@@ -51,6 +52,7 @@ public class MovementManager : MonoBehaviour
         else if (character == Character.Cientista)
         {
             cientistaScript.enabled = true;
+            Instantiate(cientistaRoofStart);
         }
         else
         {

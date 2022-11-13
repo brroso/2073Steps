@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d51aff7ed7b846b4e954a5f0e8442b44
+guid: 40be00388929e854797b8ade8a55fb07
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -125,18 +125,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -144,10 +132,10 @@ TextureImporter:
       name: Cientista_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
-        width: 100
-        height: 60
+        x: 38
+        y: 185
+        width: 18
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,8 +143,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fda85715a2577f3459925fb82d9cd407
-      internalID: 1155597346
+      spriteID: 021d6e6c0d1b7124d978bec77ba7e387
+      internalID: 514800254
       vertices: []
       indices: 
       edges: []
@@ -165,10 +153,10 @@ TextureImporter:
       name: Cientista_1
       rect:
         serializedVersion: 2
-        x: 100
-        y: 160
-        width: 100
-        height: 60
+        x: 138
+        y: 185
+        width: 18
+        height: 41
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ff9a6cde78c2b544a87e360154de5ab
-      internalID: -1492058543
+      spriteID: b3de78e504eecce4b851559828d051a4
+      internalID: -370091686
       vertices: []
       indices: 
       edges: []
@@ -186,10 +174,10 @@ TextureImporter:
       name: Cientista_2
       rect:
         serializedVersion: 2
-        x: 200
-        y: 160
-        width: 100
-        height: 60
+        x: 238
+        y: 185
+        width: 18
+        height: 41
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 261edef9f982c1e469723bf0f854b909
-      internalID: 14683588
+      spriteID: 9040dd00ee1d6d241977c726a10de8b9
+      internalID: 749797100
       vertices: []
       indices: 
       edges: []
@@ -207,10 +195,10 @@ TextureImporter:
       name: Cientista_3
       rect:
         serializedVersion: 2
-        x: 300
-        y: 160
-        width: 100
-        height: 60
+        x: 338
+        y: 185
+        width: 18
+        height: 41
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15a15bb84ba850c4ba58fa484ef0f033
-      internalID: -1425609022
+      spriteID: 7034d0b2577ecf84f8d94d062ccbf7d8
+      internalID: 1578529991
       vertices: []
       indices: 
       edges: []
@@ -228,10 +216,10 @@ TextureImporter:
       name: Cientista_4
       rect:
         serializedVersion: 2
-        x: 400
-        y: 160
-        width: 100
-        height: 60
+        x: 438
+        y: 185
+        width: 18
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,8 +227,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a99bcd65645ef894d9982b7c5dbef2aa
-      internalID: -740515056
+      spriteID: dd78ef5bd013942458cf5896c6956ed4
+      internalID: -2116701759
       vertices: []
       indices: 
       edges: []
@@ -249,10 +237,10 @@ TextureImporter:
       name: Cientista_5
       rect:
         serializedVersion: 2
-        x: 500
-        y: 160
-        width: 100
-        height: 60
+        x: 538
+        y: 185
+        width: 18
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,8 +248,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06d1512fa45ac1949980b11cf99e166f
-      internalID: 1231347680
+      spriteID: 8b9e7db90da1bea48a6a11878054289c
+      internalID: -1859474872
       vertices: []
       indices: 
       edges: []
@@ -270,10 +258,10 @@ TextureImporter:
       name: Cientista_6
       rect:
         serializedVersion: 2
-        x: 600
-        y: 160
-        width: 100
-        height: 60
+        x: 639
+        y: 185
+        width: 17
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,8 +269,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb242be2a2de0a94e95abb3ae7f1d1a7
-      internalID: 202688334
+      spriteID: f3ad0b69451a5d94293940da424784d9
+      internalID: 1300388145
       vertices: []
       indices: 
       edges: []
@@ -291,10 +279,10 @@ TextureImporter:
       name: Cientista_7
       rect:
         serializedVersion: 2
-        x: 700
-        y: 160
-        width: 100
-        height: 60
+        x: 740
+        y: 185
+        width: 21
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,8 +290,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbc55692239fafc4caf083c8907cd8e4
-      internalID: -286690524
+      spriteID: 4900b7cb2568b364aa62dfc5764a71e0
+      internalID: 1174778755
       vertices: []
       indices: 
       edges: []
@@ -312,10 +300,10 @@ TextureImporter:
       name: Cientista_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 80
-        width: 100
-        height: 60
+        x: 32
+        y: 105
+        width: 37
+        height: 43
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,8 +311,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a06f2f7670c4c14ebe88c26fda4199b
-      internalID: 213128376
+      spriteID: 620c5f8d32bc5f841a14b134fc4a30c4
+      internalID: 1496156775
       vertices: []
       indices: 
       edges: []
@@ -333,10 +321,10 @@ TextureImporter:
       name: Cientista_9
       rect:
         serializedVersion: 2
-        x: 100
-        y: 80
-        width: 100
-        height: 60
+        x: 131
+        y: 106
+        width: 39
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,8 +332,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8c63230221a5ed4391f3b92543534f3
-      internalID: -1736827305
+      spriteID: 85a11e031e2ae744993537940d20620c
+      internalID: -1154633220
       vertices: []
       indices: 
       edges: []
@@ -354,10 +342,10 @@ TextureImporter:
       name: Cientista_10
       rect:
         serializedVersion: 2
-        x: 200
-        y: 80
-        width: 100
-        height: 60
+        x: 233
+        y: 105
+        width: 35
+        height: 39
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,8 +353,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eff9ff8aa452684daa3686fea9ceaf4
-      internalID: 20221214
+      spriteID: 715957b5dc2cd8746847b57673bc3dd8
+      internalID: 502630335
       vertices: []
       indices: 
       edges: []
@@ -375,10 +363,10 @@ TextureImporter:
       name: Cientista_11
       rect:
         serializedVersion: 2
-        x: 300
-        y: 80
-        width: 100
-        height: 60
+        x: 337
+        y: 105
+        width: 27
+        height: 38
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,8 +374,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b60852ba4528ec143905cbd6d1f8e71b
-      internalID: -1487795103
+      spriteID: e9e10b3cb5be7b447b188097b4969ece
+      internalID: 408100989
       vertices: []
       indices: 
       edges: []
@@ -396,10 +384,10 @@ TextureImporter:
       name: Cientista_12
       rect:
         serializedVersion: 2
-        x: 400
-        y: 80
-        width: 100
-        height: 60
+        x: 431
+        y: 105
+        width: 37
+        height: 41
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,8 +395,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3826cd4b3a012ee43aa3a72a738eee27
-      internalID: -1144162660
+      spriteID: 1a1efa6fe36a2f94c8b31b1b636e1321
+      internalID: -1974923127
       vertices: []
       indices: 
       edges: []
@@ -417,10 +405,10 @@ TextureImporter:
       name: Cientista_13
       rect:
         serializedVersion: 2
-        x: 500
-        y: 80
-        width: 100
-        height: 60
+        x: 529
+        y: 106
+        width: 38
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,8 +416,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2db598e5063c3254386abcf57fec7e20
-      internalID: 719412154
+      spriteID: 08cbf1fd0a21b3a48867287695a571cb
+      internalID: 1492337489
       vertices: []
       indices: 
       edges: []
@@ -438,10 +426,10 @@ TextureImporter:
       name: Cientista_14
       rect:
         serializedVersion: 2
-        x: 600
-        y: 80
-        width: 100
-        height: 60
+        x: 633
+        y: 105
+        width: 31
+        height: 39
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,8 +437,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9957e4409d4c52c4d9b355d9ba87f9b0
-      internalID: -1411301482
+      spriteID: 5077de061b71dd7408212dc80a6c40c7
+      internalID: -2083794736
       vertices: []
       indices: 
       edges: []
@@ -459,10 +447,10 @@ TextureImporter:
       name: Cientista_15
       rect:
         serializedVersion: 2
-        x: 700
-        y: 80
-        width: 100
-        height: 60
+        x: 738
+        y: 105
+        width: 30
+        height: 38
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,8 +458,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec7f968a65db86c4db4dbb672031ae5c
-      internalID: 2042947579
+      spriteID: 1fc2cb7f90259d242ab5558b7f46c345
+      internalID: -1150569415
       vertices: []
       indices: 
       edges: []
@@ -480,10 +468,10 @@ TextureImporter:
       name: Cientista_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 100
-        height: 60
+        x: 39
+        y: 25
+        width: 18
+        height: 39
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -491,8 +479,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92331bf703b871d47a94283e05b70bc7
-      internalID: -1259711778
+      spriteID: c72e6a22ab0b9fc499c6f099224a55cf
+      internalID: 274168089
       vertices: []
       indices: 
       edges: []
@@ -501,10 +489,10 @@ TextureImporter:
       name: Cientista_17
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 100
-        height: 60
+        x: 136
+        y: 25
+        width: 22
+        height: 41
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,8 +500,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f46e5059a09cc584ea455800f16c527f
-      internalID: 793748096
+      spriteID: d99b74b4144082249945319900dedcb5
+      internalID: -1371164723
       vertices: []
       indices: 
       edges: []
@@ -522,10 +510,10 @@ TextureImporter:
       name: Cientista_18
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 100
-        height: 60
+        x: 237
+        y: 25
+        width: 20
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -533,8 +521,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 081140c3f8197124fbe05e7c876a2efe
-      internalID: -2030186572
+      spriteID: e51c618a2f7482e4888090fd20a378e2
+      internalID: 304973630
       vertices: []
       indices: 
       edges: []
@@ -543,10 +531,10 @@ TextureImporter:
       name: Cientista_19
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 100
-        height: 60
+        x: 337
+        y: 25
+        width: 22
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -554,8 +542,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ec8b894a00a6364ba85eb175c75fbce
-      internalID: -1420293640
+      spriteID: b44b6efe5ef22ad40a8393851607a776
+      internalID: -252013189
       vertices: []
       indices: 
       edges: []
@@ -564,10 +552,10 @@ TextureImporter:
       name: Cientista_20
       rect:
         serializedVersion: 2
-        x: 400
-        y: 0
-        width: 100
-        height: 60
+        x: 436
+        y: 27
+        width: 24
+        height: 40
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -575,8 +563,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c340ee87a1223d04da5d1dc06bfab1de
-      internalID: -1706672607
+      spriteID: 3df5541a2e087f04b86cfaec76b96f71
+      internalID: 140410741
       vertices: []
       indices: 
       edges: []
@@ -585,10 +573,10 @@ TextureImporter:
       name: Cientista_21
       rect:
         serializedVersion: 2
-        x: 500
-        y: 0
-        width: 100
-        height: 60
+        x: 535
+        y: 30
+        width: 25
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -596,8 +584,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfad7886709a9ce4189621919dafa8b7
-      internalID: 82395586
+      spriteID: 8db30b8711d3cb64fa89fcc139e3d6b3
+      internalID: 1661480481
       vertices: []
       indices: 
       edges: []
@@ -606,10 +594,10 @@ TextureImporter:
       name: Cientista_22
       rect:
         serializedVersion: 2
-        x: 600
-        y: 0
-        width: 100
-        height: 60
+        x: 633
+        y: 30
+        width: 27
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -617,8 +605,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0cfecdb04c07084ea34d1c3ab8f5d07
-      internalID: -1345824433
+      spriteID: 0ddc90bf6639eee45b35e8963c415d93
+      internalID: 547494924
       vertices: []
       indices: 
       edges: []
@@ -627,10 +615,10 @@ TextureImporter:
       name: Cientista_23
       rect:
         serializedVersion: 2
-        x: 700
-        y: 0
-        width: 100
-        height: 60
+        x: 732
+        y: 25
+        width: 29
+        height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,8 +626,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f30beaf760f98284599c119730eef589
-      internalID: -1379418921
+      spriteID: 4588501f40f2e3441a213eafdbb92fe4
+      internalID: 1513931088
       vertices: []
       indices: 
       edges: []
@@ -655,30 +643,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cientista_18: -2030186572
-      Cientista_2: 14683588
-      Cientista_4: -740515056
-      Cientista_3: -1425609022
-      Cientista_7: -286690524
-      Cientista_15: 2042947579
-      Cientista_5: 1231347680
-      Cientista_8: 213128376
-      Cientista_13: 719412154
-      Cientista_20: -1706672607
-      Cientista_10: 20221214
-      Cientista_1: -1492058543
-      Cientista_9: -1736827305
-      Cientista_14: -1411301482
-      Cientista_23: -1379418921
-      Cientista_21: 82395586
-      Cientista_12: -1144162660
-      Cientista_16: -1259711778
-      Cientista_6: 202688334
-      Cientista_19: -1420293640
-      Cientista_0: 1155597346
-      Cientista_11: -1487795103
-      Cientista_22: -1345824433
-      Cientista_17: 793748096
+      Cientista_18: 304973630
+      Cientista_2: 749797100
+      Cientista_4: -2116701759
+      Cientista_3: 1578529991
+      Cientista_7: 1174778755
+      Cientista_15: -1150569415
+      Cientista_5: -1859474872
+      Cientista_8: 1496156775
+      Cientista_13: 1492337489
+      Cientista_20: 140410741
+      Cientista_10: 502630335
+      Cientista_1: -370091686
+      Cientista_9: -1154633220
+      Cientista_14: -2083794736
+      Cientista_23: 1513931088
+      Cientista_21: 1661480481
+      Cientista_12: -1974923127
+      Cientista_16: 274168089
+      Cientista_6: 1300388145
+      Cientista_19: -252013189
+      Cientista_0: 514800254
+      Cientista_11: 408100989
+      Cientista_22: 547494924
+      Cientista_17: -1371164723
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -8,7 +8,7 @@ public class FantasmaMovement : MonoBehaviour
     public Rigidbody2D playerRb;
     public bool isTangible = true;
     private Sensor_Prototype m_groundSensor;
-    private bool m_grounded = false;
+    private bool m_grounded = true;
     float fallSpeed = 40;
     private Animator m_animator;
 
@@ -31,6 +31,8 @@ public class FantasmaMovement : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
+            m_animator.SetTrigger("Jump");
+            m_animator.SetFloat("AirSpeedY", -1);
             if (isTangible)
             {
                 isTangible = false;
@@ -80,7 +82,7 @@ public class FantasmaMovement : MonoBehaviour
         {
             GameManager.GameOver();
         }
-        else if (collision.gameObject.tag == "ParedeSolida" & !isTangible)
+        else if (collision.gameObject.tag == "ParedeFalsa" & !isTangible)
         {
             GameManager.GameOver();
         }

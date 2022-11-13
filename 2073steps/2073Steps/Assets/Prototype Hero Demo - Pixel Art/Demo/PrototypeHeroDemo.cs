@@ -5,7 +5,6 @@ public class PrototypeHeroDemo : MonoBehaviour {
 
     [Header("Variables")]
     [SerializeField] float      m_maxSpeed = 4.5f;
-    [SerializeField] float      m_jumpForce = 7.5f;
     public Character            m_character;
     [Header("Effects")]
     [SerializeField] GameObject m_RunStopDust;
@@ -65,7 +64,13 @@ public class PrototypeHeroDemo : MonoBehaviour {
         m_body2d.velocity = new Vector2(inputX * m_maxSpeed * SlowDownSpeed, m_body2d.velocity.y);
 
         // Set AirSpeed in animator
-        m_animator.SetFloat("AirSpeedY", m_body2d.velocity.y);
+        if (m_character == Character.Maratonista)
+        {
+            m_animator.SetFloat("AirSpeedY", m_body2d.velocity.y);
+        } else
+        {
+            m_animator.SetFloat("AirSpeedY", -1);
+        }
 
         // Escolhe a layer do Animator para o personagem desejado
         if (m_character == Character.Maratonista)
@@ -131,6 +136,23 @@ public class PrototypeHeroDemo : MonoBehaviour {
         // Spawn Dust
         SpawnDustEffect(m_JumpDust);
     }
+
+    void AE_FadeFantasma()
+    {
+        m_audioManager.PlaySound("FadeFantasma");
+    }
+
+    void AE_WalkFantasma()
+    {
+        m_audioManager.PlaySound("WalkFantasma");
+    }
+
+    void AE_CliqueCientista()
+    {
+        m_audioManager.PlaySound("CliqueCientista");
+    }
+
+
 
     void AE_Landing()
     {

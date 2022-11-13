@@ -148,7 +148,7 @@ GameObject:
   - component: {fileID: 8082024853312802012}
   m_Layer: 3
   m_Name: Triangle (1)
-  m_TagString: Untagged
+  m_TagString: Espinho
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,7 +237,7 @@ GameObject:
   - component: {fileID: 3538007829116078698}
   m_Layer: 3
   m_Name: Triangle
-  m_TagString: Untagged
+  m_TagString: Espinho
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -326,7 +326,7 @@ GameObject:
   - component: {fileID: 4047279666173209648}
   m_Layer: 3
   m_Name: Triangle (5)
-  m_TagString: Untagged
+  m_TagString: Espinho
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 1828791486963115328}
   m_Layer: 3
   m_Name: Triangle (4)
-  m_TagString: Untagged
+  m_TagString: Espinho
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 6588104899841289773}
   m_Layer: 3
   m_Name: Triangle (3)
-  m_TagString: Untagged
+  m_TagString: Espinho
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -593,7 +593,7 @@ GameObject:
   - component: {fileID: 7787686568129386217}
   m_Layer: 3
   m_Name: Triangle (2)
-  m_TagString: Untagged
+  m_TagString: Espinho
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

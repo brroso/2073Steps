@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (distance >= 210 & distance > 0)
+        if (distance >= 50 & distance > 0)
         {
             NextState();
             distance = 0;
@@ -84,9 +84,9 @@ public class GameManager : MonoBehaviour
 
 public enum Character
 {
+    Maratonista,
     Cientista,
-    Fantasma,
-    Maratonista
+    Fantasma
 }
 
 public enum Hazard

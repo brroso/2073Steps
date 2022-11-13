@@ -7,33 +7,33 @@ public class CientistaMovement : MonoBehaviour
     public Rigidbody2D rb;
     private Animator m_animator;
     private Sensor_Prototype m_groundSensor;
-    private bool m_grounded = false;
-    private float flipHeight;
+    private bool m_grounded = true;
     private bool isUpsideDown = false;
     private SpriteRenderer spriteRenderer;
 
     void Start()
     {
-        Camera cam = Camera.main;
-        flipHeight = 1.4f;
         m_animator = GetComponent<Animator>();
+        Camera cam = Camera.main;
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_Prototype>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
     // Update is called once per frame
     void Update()
     {
-        isUpsideDown = spriteRenderer.flipY;
-        if (Input.GetButtonDown("Jump"))
+        flipCharacter();
+        if (Input.GetButtonDown("Jump") & m_grounded)
         {
+            m_animator.SetTrigger("Jump");
             rb.gravityScale *= -1;
-            flipCharacter();
+            m_animator.SetFloat("AirSpeedY", -1);
         }
 
         //Check if character just landed on the ground
         if (!m_grounded && m_groundSensor.State())
         {
             m_grounded = true;
+            m_animator.SetFloat("AirSpeedY", 1);
             m_animator.SetBool("Grounded", m_grounded);
         }
 
@@ -47,25 +47,27 @@ public class CientistaMovement : MonoBehaviour
 
     public void flipCharacter()
     {
-        if (spriteRenderer.flipY == false)
+        if (!isUpsideDown & transform.position.y >= 2.5f)
         {
-            spriteRenderer.flipY = true;
+            transform.localScale = new Vector3(1f, -1f, 1f);
+            isUpsideDown = true;
         }
-        else if (spriteRenderer.flipY == true)
+        else if (isUpsideDown & transform.position.y < 2.5f)
         {
-            spriteRenderer.flipY = false;
+            transform.localScale = new Vector3(1f, 1f, 1f);
+            isUpsideDown = false;
         }
     }
 
     public void resetCientista()
     {
         rb.gravityScale = Mathf.Abs(rb.gravityScale);
-        spriteRenderer.flipY = false;
+        transform.localScale = new Vector3(1f, 1f, 1f);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Espinho")
+        if (collision.gameObject.tag == "Espinho" && this.enabled)
         {
             Debug.Log("Morreu Cientista");
             GameManager.GameOver();

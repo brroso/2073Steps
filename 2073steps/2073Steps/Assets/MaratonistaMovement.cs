@@ -8,8 +8,6 @@ public class MaratonistaMovement : MonoBehaviour
     float jumpAmount = 15;
     float fallSpeed = 40;
     bool jumped = false;
-    bool inAir = false;
-    bool isAlive = true;
     private Animator m_animator;
     private Sensor_Prototype m_groundSensor;
     private bool m_grounded = false;
@@ -26,7 +24,6 @@ public class MaratonistaMovement : MonoBehaviour
         {
             playerRb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
             jumped = false;
-            inAir = true;
         }
         if (!m_grounded)
         {
@@ -67,7 +64,7 @@ public class MaratonistaMovement : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Obstacle")
+        if (collision.gameObject.tag == "Obstacle" && this.enabled)
         {
             GameManager.GameOver();
         }
