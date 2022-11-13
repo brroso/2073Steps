@@ -15,6 +15,11 @@ public class ObstacleSpeed : MonoBehaviour
     void FixedUpdate()
     {
         transform.Translate(-gameSpeed * Time.deltaTime, 0f, 0f);
-        Destroy(gameObject, 4);
+        
+
+        if (transform.position.x <= -100)
+        {
+            Destroy(gameObject);
+        }
     }
 }

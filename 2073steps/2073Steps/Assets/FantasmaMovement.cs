@@ -37,7 +37,7 @@ public class FantasmaMovement : MonoBehaviour
                 SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
                 if (spriteRenderer != null)
                 {
-                    spriteRenderer.color = new Color(1.0f, 1.0f, 1.0f, 0.5f);
+                    spriteRenderer.color = new Color(0f, (196f/255f), 1.0f, 0.5f);
                 }
             }
             else
@@ -66,6 +66,7 @@ public class FantasmaMovement : MonoBehaviour
 
     public void resetFantasma()
     {
+        isTangible = true;
         SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         if (spriteRenderer != null)
         {
@@ -78,10 +79,12 @@ public class FantasmaMovement : MonoBehaviour
         if (collision.gameObject.tag == "ParedeSolida" & isTangible)
         {
             Debug.Log("Morreu solido");
+            GameManager.GameOver();
         }
         else if (collision.gameObject.tag == "ParedeSolida" & !isTangible)
         {
             Debug.Log("Morreu liquido");
+            GameManager.GameOver();
         }
     }
 }

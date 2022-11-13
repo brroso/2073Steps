@@ -23,16 +23,15 @@ public class Parallax : MonoBehaviour
         cameraWidth = cameraHeight * cam.aspect;
 
         sprite = GetComponent<SpriteRenderer>();
+    }
 
+    private void FixedUpdate()
+    {
         if (sprite)
         {
             sprite.sortingOrder = sortingOrder;
             parallaxSpeed = sortingOrder * GameManager.gameSpeed * 0.1f;
         }
-    }
-
-    private void FixedUpdate()
-    {
         transform.Translate(-parallaxSpeed * Time.deltaTime, 0f, 0f);
         // Debug.Log(transform.position);
 

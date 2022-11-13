@@ -8,6 +8,9 @@ TagManager:
   - Background
   - ParedeSolida
   - ParedeFalsa
+  - Hazard
+  - Espinho
+  - Obstacle
   layers:
   - Default
   - TransparentFX

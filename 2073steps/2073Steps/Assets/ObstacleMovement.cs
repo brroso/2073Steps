@@ -1,3 +1,6 @@
+using Random = UnityEngine.Random;
+
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -18,17 +21,17 @@ public class ObstacleMovement : MonoBehaviour
     public float Countdown = 10f;
     public float waitingForNextSpawn = 10f;
 
-    float timer = 0f;
-
     float rTime;
+    float distance;
 
-    public GameObject oldHazard;
+    public GameObject lastHazard;
     private GameObject newHazard;
+
+    public int paredeRandomizer;
 
     // Start is called before the first frame update
     void Start()
     {
-
         Camera cam = Camera.main;
         cameraHeight = 2f * cam.orthographicSize;
         cameraWidth = cameraHeight * cam.aspect;
@@ -37,23 +40,17 @@ public class ObstacleMovement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-
+        distance = GameManager.distance;
+        Debug.Log(distance);
         rTime = Random.Range(0f, 100f);
 
-        if(rTime >= 95f)
+        if(rTime >= 95f & (distance > 30 & distance < 180))
         {
-            if((oldHazard.transform.position.x - transform.position.x) < -5)
+            if((lastHazard.transform.position.x - transform.position.x) < -5)
             {
                 generateHazard(GameManager.current_character);
-                oldHazard = newHazard;
+                lastHazard = newHazard;
             }
-
-            if (transform.position.x <= -8)
-            {
-                Destroy(newHazard);
-            }
-
-            timer = 0;
         }
     }
 
@@ -65,7 +62,16 @@ public class ObstacleMovement : MonoBehaviour
         }
         else if (character == Character.Fantasma)
         {
-            newHazard = Instantiate(hazardFantasmaSolido);
+            paredeRandomizer = (int) Math.Round(Random.Range(0f, 2f));
+            if (paredeRandomizer == 0)
+            {
+                newHazard = Instantiate(hazardFantasmaSolido);
+            }
+            else if (paredeRandomizer == 1)
+            {
+                newHazard = Instantiate(hazardFantasmaFalso);
+            }
+            
         }
         else if (character == Character.Cientista)
         {

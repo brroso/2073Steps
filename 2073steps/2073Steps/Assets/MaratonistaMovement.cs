@@ -64,4 +64,13 @@ public class MaratonistaMovement : MonoBehaviour
             m_groundSensor.Disable(0.2f);
         }
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            Debug.Log("Morreu Maratonista");
+            GameManager.GameOver();
+        }
+    }
 }

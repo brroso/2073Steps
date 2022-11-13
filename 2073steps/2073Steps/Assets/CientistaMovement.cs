@@ -24,7 +24,6 @@ public class CientistaMovement : MonoBehaviour
     void Update()
     {
         isUpsideDown = spriteRenderer.flipY;
-        Debug.Log(flipHeight + " " + transform.position.y);
         if (Input.GetButtonDown("Jump"))
         {
             rb.gravityScale *= -1;
@@ -62,5 +61,14 @@ public class CientistaMovement : MonoBehaviour
     {
         rb.gravityScale = Mathf.Abs(rb.gravityScale);
         spriteRenderer.flipY = false;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Espinho")
+        {
+            Debug.Log("Morreu Cientista");
+            GameManager.GameOver();
+        }
     }
 }

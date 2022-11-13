@@ -19,12 +19,11 @@ public class Ground : MonoBehaviour
         Camera cam = Camera.main;
         cameraHeight = 2f * cam.orthographicSize;
         cameraWidth = cameraHeight * cam.aspect;
-
-        gameSpeed = GameManager.gameSpeed;
     }
 
     private void FixedUpdate()
     {
+        gameSpeed = GameManager.gameSpeed;
         transform.Translate(-gameSpeed * Time.deltaTime, 0f, 0f);
 
         if (!generatedGround)

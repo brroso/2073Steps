@@ -2231,7 +2231,8 @@ MonoBehaviour:
   hazardFantasmaFalso: {fileID: 5263926204170314845, guid: 750228bc5d0f28f4aa01ee711660ad13, type: 3}
   Countdown: 10
   waitingForNextSpawn: 10
-  oldHazard: {fileID: 293107522}
+  lastHazard: {fileID: 293107522}
+  paredeRandomizer: 0
 --- !u!1001 &2845244254916639444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2239,6 +2240,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1617338882266160363, guid: f27fa705ff056e64c8bcf8c510c92222, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.5625
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617338882266160363, guid: f27fa705ff056e64c8bcf8c510c92222, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.3125
+      objectReference: {fileID: 0}
     - target: {fileID: 2845244254127094361, guid: f27fa705ff056e64c8bcf8c510c92222, type: 3}
       propertyPath: m_Name
       value: Personagem
@@ -2312,8 +2321,24 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4613980215459277378, guid: f27fa705ff056e64c8bcf8c510c92222, type: 3}
-      propertyPath: m_SortingLayer
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1191280661, guid: 29be2628030fe3a4e89316088ef286c8, type: 3}
+    - target: {fileID: 4613980215459277378, guid: f27fa705ff056e64c8bcf8c510c92222, type: 3}
+      propertyPath: m_Color.b
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613980215459277378, guid: f27fa705ff056e64c8bcf8c510c92222, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613980215459277378, guid: f27fa705ff056e64c8bcf8c510c92222, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4613980215459277378, guid: f27fa705ff056e64c8bcf8c510c92222, type: 3}
+      propertyPath: m_SortingLayer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4613980215459277378, guid: f27fa705ff056e64c8bcf8c510c92222, type: 3}
       propertyPath: m_SortingOrder

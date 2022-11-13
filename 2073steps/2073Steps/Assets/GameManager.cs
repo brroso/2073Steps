@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (distance % 49f == 0 & distance > 0)
+        if (distance >= 210 & distance > 0)
         {
             NextState();
             distance = 0;
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
     public static void NextState()
     {
         UpdateCharacter();
+        gameSpeed += 1f;
     }
 
     static void UpdateCharacter()
@@ -52,8 +54,6 @@ public class GameManager : MonoBehaviour
             Shuffle(characters);
             characters.Remove(next_character);
         }
-
-        Debug.Log(current_character + " " + next_character + " " + gameSpeed);
     }
 
     public static void Shuffle<T>(IList<T> list)
@@ -68,13 +68,25 @@ public class GameManager : MonoBehaviour
             list[n] = value;
         }
     }
+
+    public static void GameOver()
+    {
+        characters = Enum.GetValues(typeof(Character)).OfType<Character>().ToList();
+        current_character = characters[0];
+        characters.RemoveAt(0);
+        next_character = characters[0];
+        characters.RemoveAt(0);
+        distance = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+    }
 }
 
 public enum Character
 {
-    Maratonista,
+    Fantasma,
     Cientista,
-    Fantasma
+    Maratonista
 }
 
 public enum Hazard
