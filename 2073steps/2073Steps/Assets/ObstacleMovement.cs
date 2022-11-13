@@ -11,6 +11,7 @@ public class ObstacleMovement : MonoBehaviour
 {
     public GameObject hazardMaratonista;
     public GameObject hazardCientista;
+    public GameObject hazardCientistaRoof;
     public GameObject hazardFantasmaSolido;
     public GameObject hazardFantasmaFalso;
 
@@ -29,7 +30,8 @@ public class ObstacleMovement : MonoBehaviour
     private GameObject newHazard;
 
     public int paredeRandomizer;
-    public int roofRandomizer;
+    public float roofRandomizer;
+    public int heightRandomizer;
 
     // Start is called before the first frame update
     void Start()
@@ -63,7 +65,7 @@ public class ObstacleMovement : MonoBehaviour
         }
         else if (character == Character.Fantasma)
         {
-            paredeRandomizer = (int) Math.Round(Random.Range(0f, 2f));
+            paredeRandomizer = (int) Math.Round(Random.Range(0f, 1f));
             if (paredeRandomizer == 0)
             {
                 newHazard = Instantiate(hazardFantasmaSolido);
@@ -76,16 +78,18 @@ public class ObstacleMovement : MonoBehaviour
         }
         else if (character == Character.Cientista)
         {
-            roofRandomizer = (int)Math.Round(Random.Range(0f, 2f));
+            roofRandomizer = (int)Math.Round(Random.Range(0f, 1f));
             if (roofRandomizer == 0)
             {
                 newHazard = Instantiate(hazardCientista);
             }
             else if (roofRandomizer == 1)
             {
-                newHazard = Instantiate(hazardCientista);
-                newHazard.transform.localScale = Vector3.Scale(new Vector3(1f, -1f, 1f), newHazard.transform.localScale);
-                newHazard.transform.position = new Vector3(newHazard.transform.position.x, 5.9f, newHazard.transform.position.z);
+                newHazard = Instantiate(hazardCientistaRoof);
+
+                roofRandomizer = Random.Range(-0.5f, 0.5f);
+
+                newHazard.transform.position += new Vector3(newHazard.transform.position.x, roofRandomizer, newHazard.transform.position.z);
             }
         }
     }

@@ -123,6 +123,67 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &102405963
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1378719288403541790, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3531177308654523585, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_Name
+      value: Passaro
+      objectReference: {fileID: 0}
+    - target: {fileID: 7185787578915810491, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: df4b7789dfc065d48ab2156e0fb3f8b8, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
 --- !u!1 &111390020
 GameObject:
   m_ObjectHideFlags: 0
@@ -2538,7 +2599,7 @@ MonoBehaviour:
   distanceUIObj: {fileID: 994601836}
   fadeEffectStart: {fileID: 944153737}
   fadeEffectEnd: {fileID: 732843421}
-  debugDistance: 0
+  debugDistance: 1900
 --- !u!4 &1855806989
 Transform:
   m_ObjectHideFlags: 0
@@ -2781,6 +2842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hazardMaratonista: {fileID: 8705638741780578787, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
   hazardCientista: {fileID: 3108265629370383372, guid: cfb2844b4d717124ea96523174e39b20, type: 3}
+  hazardCientistaRoof: {fileID: 3531177308654523585, guid: 98cfe92023dcbf643afb48ed63332440, type: 3}
   hazardFantasmaSolido: {fileID: 5263926204170314845, guid: 9467b31545b950e4c90efc9efd364eab, type: 3}
   hazardFantasmaFalso: {fileID: 5263926204170314845, guid: 750228bc5d0f28f4aa01ee711660ad13, type: 3}
   Countdown: 10
@@ -2788,6 +2850,7 @@ MonoBehaviour:
   lastHazard: {fileID: 293107522}
   paredeRandomizer: 0
   roofRandomizer: 0
+  heightRandomizer: 0
 --- !u!1001 &2104028078
 PrefabInstance:
   m_ObjectHideFlags: 0
