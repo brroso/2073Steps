@@ -48,12 +48,12 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        /*// Para testar o efeito de fade com Ctrl.
+        // Para testar o efeito de fade com Ctrl.
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             fadeEffectStart.SetActive(true);
             fadeEffectEnd.SetActive(true);
-        }*/
+        }
 
         if (distance >= 2000 & distance > 0)
         {
@@ -121,8 +121,8 @@ public class GameManager : MonoBehaviour
 public enum Character
 {
     Maratonista,
-    Fantasma,
-    Cientista
+    Cientista,
+    Fantasma
 }
 
 public enum Hazard
