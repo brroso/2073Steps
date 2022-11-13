@@ -8,7 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     private UIDocument uiDoc;
 
-    void Awake()
+    void Start()
     {
         uiDoc = GetComponent<UIDocument>();
         Pause();
@@ -19,7 +19,7 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
             Pause();
-        else if (Input.GetKeyDown(KeyCode.Space))
+        else if (Input.GetKeyDown(KeyCode.Space) & GameManager.gameIsPaused)
         {
             if (GameManager.gameJustStarted)
             {
@@ -33,6 +33,7 @@ public class PauseMenu : MonoBehaviour
     {
         uiDoc.enabled = false;
         Time.timeScale = 1.0f;
+        GameManager.soundtrack.Play();
         GameManager.gameIsPaused = false;
     }
 
@@ -40,6 +41,7 @@ public class PauseMenu : MonoBehaviour
     {
         uiDoc.enabled = true;
         Time.timeScale = 0f;
+        GameManager.soundtrack.Pause();
         GameManager.gameIsPaused = true;
     }
 

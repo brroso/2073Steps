@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     public static List<Character> characters;
     public static float distance = 0;
     public static bool gameIsPaused = true;
+    public AudioSource soundtrackObj;
+    public static AudioSource soundtrack;
+
     
     public static GameObject distanceUI;
     public static bool gameJustStarted = true;
@@ -32,6 +35,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         distanceUI = distanceUIObj;
+        soundtrack = soundtrackObj;
         Instance = this;
 
         distance += debugDistance;
@@ -104,6 +108,7 @@ public class GameManager : MonoBehaviour
 
     public static void GameOver()
     {
+        soundtrack.Stop();
         characters = Enum.GetValues(typeof(Character)).OfType<Character>().ToList();
         current_character = characters[0];
         characters.RemoveAt(0);

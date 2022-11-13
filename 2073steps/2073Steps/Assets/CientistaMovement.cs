@@ -37,7 +37,6 @@ public class CientistaMovement : MonoBehaviour
             m_grounded = false;
             m_animator.SetBool("Grounded", m_grounded);
         }
-
         c_paused = GameManager.gameIsPaused;
     }
 
@@ -48,6 +47,7 @@ public class CientistaMovement : MonoBehaviour
             m_animator.SetTrigger("Jump");
             rb.gravityScale *= -1;
             m_animator.SetFloat("AirSpeedY", -1);
+            rb.AddForce(Vector2.up * (rb.gravityScale * - 1) * (10 + (GameManager.gameSpeed / GameManager.originalGameSpeed) * 0.2f), ForceMode2D.Impulse);
         }
     }
 

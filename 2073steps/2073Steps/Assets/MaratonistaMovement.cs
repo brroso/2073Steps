@@ -23,13 +23,13 @@ public class MaratonistaMovement : MonoBehaviour
     {
         if (jumped == true)
         {
-            playerRb.AddForce(Vector2.up * jumpAmount, ForceMode2D.Impulse);
+            playerRb.AddForce(Vector2.up * jumpAmount * (1 + (GameManager.gameSpeed / GameManager.originalGameSpeed) * 0.2f), ForceMode2D.Impulse);
             jumped = false;
         }
         if (!m_grounded)
         {
             Vector2 vel = playerRb.velocity;
-            vel.y -= fallSpeed * Time.deltaTime;
+            vel.y -= fallSpeed * Time.deltaTime * (GameManager.gameSpeed / GameManager.originalGameSpeed);
             playerRb.velocity = vel;
         }
     }

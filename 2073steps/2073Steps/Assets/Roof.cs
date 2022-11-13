@@ -69,6 +69,15 @@ public class Roof : MonoBehaviour
             pos2.y = transform.position.y;
 
             roof2.transform.position = pos2;
+
+            GameObject roof3 = Instantiate(obj);
+            BoxCollider2D roofCollider3 = roof3.GetComponent<BoxCollider2D>();
+            Vector2 pos3;
+
+            pos3.x = (cameraWidth) - (gameSpeed * Time.deltaTime);
+            pos3.y = transform.position.y;
+
+            roof3.transform.position = pos3;
         }
         else
         {
