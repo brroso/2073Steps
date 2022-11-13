@@ -38,7 +38,7 @@ public class Ground : MonoBehaviour
             }
         }
 
-        if (transform.position.x <= -(groundRect.rect.width / 2f))
+        if (transform.position.x <= -(groundRect.rect.width))
             Destroy(gameObject);
 
         /*if (roof.transform.position.x <= -(roofRect.rect.width / 2f))

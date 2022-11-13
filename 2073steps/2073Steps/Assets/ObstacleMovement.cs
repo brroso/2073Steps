@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections.Specialized;
 
 public class ObstacleMovement : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class ObstacleMovement : MonoBehaviour
     private GameObject newHazard;
 
     public int paredeRandomizer;
+    public int roofRandomizer;
 
     // Start is called before the first frame update
     void Start()
@@ -74,7 +76,17 @@ public class ObstacleMovement : MonoBehaviour
         }
         else if (character == Character.Cientista)
         {
-            newHazard = Instantiate(hazardCientista);
+            roofRandomizer = (int)Math.Round(Random.Range(0f, 2f));
+            if (roofRandomizer == 0)
+            {
+                newHazard = Instantiate(hazardCientista);
+            }
+            else if (roofRandomizer == 1)
+            {
+                newHazard = Instantiate(hazardCientista);
+                newHazard.transform.localScale = Vector3.Scale(new Vector3(1f, -1f, 1f), newHazard.transform.localScale);
+                newHazard.transform.position = new Vector3(newHazard.transform.position.x, 5.9f, newHazard.transform.position.z);
+            }
         }
     }
 }
