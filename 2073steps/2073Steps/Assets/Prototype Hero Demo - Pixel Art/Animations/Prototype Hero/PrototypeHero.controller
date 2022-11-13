@@ -186,28 +186,28 @@ AnimatorController:
     m_Motions:
     - serializedVersion: 2
       m_State: {fileID: 110215012}
-      m_Motion: {fileID: 7400000, guid: 7297b00d6267ad14585602f5a472e674, type: 2}
+      m_Motion: {fileID: 7400000, guid: 61bcdb7c91d50ae44beeb16026c8f06b, type: 2}
     - serializedVersion: 2
       m_State: {fileID: 110290548}
-      m_Motion: {fileID: 7400000, guid: 7297b00d6267ad14585602f5a472e674, type: 2}
+      m_Motion: {fileID: 7400000, guid: a213010f012206542967a0cbb33bc536, type: 2}
     - serializedVersion: 2
       m_State: {fileID: 1102379001521977246}
-      m_Motion: {fileID: 7400000, guid: 8bf061ba4093e1f4ab0874cb36f829b2, type: 2}
+      m_Motion: {fileID: 0}
     - serializedVersion: 2
       m_State: {fileID: 1102589304282959532}
-      m_Motion: {fileID: 7400000, guid: 5f511144564e9b54e8d1548353588815, type: 2}
+      m_Motion: {fileID: 0}
     - serializedVersion: 2
       m_State: {fileID: 1102999884274504608}
-      m_Motion: {fileID: 7400000, guid: 994cf65dc67cf8a4fb02d509f58beefd, type: 2}
+      m_Motion: {fileID: 7400000, guid: 61bcdb7c91d50ae44beeb16026c8f06b, type: 2}
     - serializedVersion: 2
       m_State: {fileID: 1102752457226709052}
-      m_Motion: {fileID: 7400000, guid: ef50436d38c49304eb70cd8661d95a37, type: 2}
+      m_Motion: {fileID: 7400000, guid: 61bcdb7c91d50ae44beeb16026c8f06b, type: 2}
     - serializedVersion: 2
       m_State: {fileID: 1102009571870106696}
-      m_Motion: {fileID: 7400000, guid: a65ae4367960d4f409ebad738d605bbf, type: 2}
+      m_Motion: {fileID: 7400000, guid: 61bcdb7c91d50ae44beeb16026c8f06b, type: 2}
     - serializedVersion: 2
       m_State: {fileID: 1102940124560247288}
-      m_Motion: {fileID: 7400000, guid: 417bf34d0bc9e5e4185f36b0b782ff5a, type: 2}
+      m_Motion: {fileID: 7400000, guid: f6904d6dd8ec37f469de0fc3d1000d35, type: 2}
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: 0
@@ -235,6 +235,9 @@ AnimatorController:
     - serializedVersion: 2
       m_State: {fileID: 1102940124560247288}
       m_Motion: {fileID: 7400000, guid: 08fd2ec5fd94b984b94aa0f7c0b94f43, type: 2}
+    - serializedVersion: 2
+      m_State: {fileID: 110215012}
+      m_Motion: {fileID: 7400000, guid: f08519706aa61a648aa063c56205f99b, type: 2}
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: 0
@@ -324,7 +327,7 @@ AnimatorStateMachine:
     m_Position: {x: 84, y: -252, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102589304282959532}
-    m_Position: {x: 312, y: 48, z: 0}
+    m_Position: {x: 310, y: 50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102379001521977246}
     m_Position: {x: -140, y: 50, z: 0}

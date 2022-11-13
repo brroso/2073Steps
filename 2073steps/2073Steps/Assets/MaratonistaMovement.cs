@@ -11,6 +11,7 @@ public class MaratonistaMovement : MonoBehaviour
     private Animator m_animator;
     private Sensor_Prototype m_groundSensor;
     private bool m_grounded = false;
+    private bool m_paused = true;
 
     void Start()
     {
@@ -52,7 +53,7 @@ public class MaratonistaMovement : MonoBehaviour
 
         // -- Handle Animations --
         //Jump
-        if (Input.GetButtonDown("Jump") && m_grounded)
+        if (!m_paused & Input.GetButtonDown("Jump") && m_grounded)
         {
             m_animator.SetTrigger("Jump");
             m_grounded = false;
@@ -60,6 +61,8 @@ public class MaratonistaMovement : MonoBehaviour
             jumped = true;
             m_groundSensor.Disable(0.2f);
         }
+
+        m_paused = GameManager.gameIsPaused;
     }
 
     void OnTriggerEnter2D(Collider2D collision)
