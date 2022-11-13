@@ -49,7 +49,7 @@ public class AudioManager_PrototypeHero : MonoBehaviour
     {
         if(instance != null)
         {
-            Debug.LogError("More than one AudioManger in scene");
+            Debug.LogError("More than one AudioManager in scene");
         }
         else
         {

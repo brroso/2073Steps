@@ -11,6 +11,7 @@ public class FantasmaMovement : MonoBehaviour
     private bool m_grounded = true;
     float fallSpeed = 40;
     private Animator m_animator;
+    private bool f_paused = true;
 
     void Start()
     {
@@ -29,7 +30,7 @@ public class FantasmaMovement : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetButtonDown("Jump"))
+        if (!f_paused & Input.GetButtonDown("Jump"))
         {
             m_animator.SetTrigger("Jump");
             m_animator.SetFloat("AirSpeedY", -1);
@@ -64,6 +65,8 @@ public class FantasmaMovement : MonoBehaviour
             m_grounded = false;
             m_animator.SetBool("Grounded", m_grounded);
         }
+
+        f_paused = GameManager.gameIsPaused;
     }
 
     public void resetFantasma()

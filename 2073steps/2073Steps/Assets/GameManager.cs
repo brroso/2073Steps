@@ -13,9 +13,15 @@ public class GameManager : MonoBehaviour
     public static Character next_character;
     public static List<Character> characters;
     public static float distance = 0;
+    public static bool gameIsPaused = true;
+    
+    public static GameObject distanceUI;
+    public static bool gameJustStarted = true;
+    public GameObject distanceUIObj;
 
     void Awake()
     {
+        distanceUI = distanceUIObj;
         Instance = this;
     }
 
@@ -48,6 +54,7 @@ public class GameManager : MonoBehaviour
         current_character = next_character;
         next_character = characters[0];
         characters.RemoveAt(0);
+
         if (characters.Count == 0)
         {
             characters = Enum.GetValues(typeof(Character)).OfType<Character>().ToList();

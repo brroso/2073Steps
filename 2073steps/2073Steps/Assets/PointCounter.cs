@@ -13,7 +13,7 @@ public class PointCounter : MonoBehaviour
 
         distanceLabel = rootVisualElement.Q<Label>("distance");
 
-        InvokeRepeating("IncrementDistance", 0f, 1f);
+        InvokeRepeating("IncrementDistance", 0.5f, 1f);
     }
 
     private void IncrementDistance()

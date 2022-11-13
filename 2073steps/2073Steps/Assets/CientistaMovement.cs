@@ -10,6 +10,7 @@ public class CientistaMovement : MonoBehaviour
     private bool m_grounded = true;
     private bool isUpsideDown = false;
     private SpriteRenderer spriteRenderer;
+    private bool c_paused = true;
 
     void Start()
     {
@@ -22,7 +23,7 @@ public class CientistaMovement : MonoBehaviour
     void Update()
     {
         flipCharacter();
-        if (Input.GetButtonDown("Jump") & m_grounded)
+        if (!c_paused & Input.GetButtonDown("Jump") & m_grounded)
         {
             m_animator.SetTrigger("Jump");
             rb.gravityScale *= -1;
@@ -43,6 +44,8 @@ public class CientistaMovement : MonoBehaviour
             m_grounded = false;
             m_animator.SetBool("Grounded", m_grounded);
         }
+
+        c_paused = GameManager.gameIsPaused;
     }
 
     public void flipCharacter()
@@ -69,7 +72,6 @@ public class CientistaMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Espinho" && this.enabled)
         {
-            Debug.Log("Morreu Cientista");
             GameManager.GameOver();
         }
     }
