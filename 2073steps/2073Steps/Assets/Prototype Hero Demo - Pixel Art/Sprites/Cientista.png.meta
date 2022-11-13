@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 56cc3905915c9c04793a13ad0edf170a
+guid: d51aff7ed7b846b4e954a5f0e8442b44
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -141,181 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fantasma_0
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 160
-        width: 18
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fd566cac2aef0694e82a6151eeab27e8
-      internalID: 1807636601
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_1
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 160
-        width: 18
-        height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8f5d152d1a4436c4c9510a9e9191f8b9
-      internalID: -1777281220
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_2
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 161
-        width: 18
-        height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a4ea704b1866f2644ba3b6e915e90624
-      internalID: -1130936858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_3
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 160
-        width: 18
-        height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e58c92562dcca9544b4deecfbac58ff7
-      internalID: 101636187
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_4
-      rect:
-        serializedVersion: 2
-        x: 406
-        y: 160
-        width: 18
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7a0eb8417de2854198f4ab36bcf4091
-      internalID: -665445261
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_5
-      rect:
-        serializedVersion: 2
-        x: 506
-        y: 160
-        width: 18
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 012dc2ffdac4d674e967f38564d7f91d
-      internalID: -1650719139
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_6
-      rect:
-        serializedVersion: 2
-        x: 607
-        y: 160
-        width: 17
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29db06ab0f36cfb4ba2ac2f86c897268
-      internalID: -105351325
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_7
-      rect:
-        serializedVersion: 2
-        x: 708
-        y: 160
-        width: 21
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42cd8e74e50994c4eb069c735ec9499e
-      internalID: 1219989609
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_8
+      name: Cientista_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 81
-        width: 37
-        height: 41
+        y: 160
+        width: 100
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3da75bd7d0248b2409865a68ae9984ae
-      internalID: 1943019024
+      spriteID: fda85715a2577f3459925fb82d9cd407
+      internalID: 1155597346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fantasma_9
+      name: Cientista_1
       rect:
         serializedVersion: 2
-        x: 98
-        y: 81
-        width: 39
-        height: 40
+        x: 100
+        y: 160
+        width: 100
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a73dc0e4c6fa2d84bad76ed291bf96f7
-      internalID: 869493008
+      spriteID: 2ff9a6cde78c2b544a87e360154de5ab
+      internalID: -1492058543
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fantasma_10
+      name: Cientista_2
       rect:
         serializedVersion: 2
-        x: 201
-        y: 80
-        width: 35
-        height: 39
+        x: 200
+        y: 160
+        width: 100
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -365,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2198ed9176631a641b661613dc598371
-      internalID: 538963701
+      spriteID: 261edef9f982c1e469723bf0f854b909
+      internalID: 14683588
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fantasma_11
+      name: Cientista_3
       rect:
         serializedVersion: 2
-        x: 305
-        y: 80
-        width: 27
-        height: 38
+        x: 300
+        y: 160
+        width: 100
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -386,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a55e74dbfb30cbc4eb41aff50f81fcbb
-      internalID: 1062493307
+      spriteID: 15a15bb84ba850c4ba58fa484ef0f033
+      internalID: -1425609022
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fantasma_12
+      name: Cientista_4
       rect:
         serializedVersion: 2
-        x: 399
-        y: 80
-        width: 37
-        height: 41
+        x: 400
+        y: 160
+        width: 100
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -407,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae450a193f83664459f0301c8784f1d6
-      internalID: 1986021712
+      spriteID: a99bcd65645ef894d9982b7c5dbef2aa
+      internalID: -740515056
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fantasma_13
+      name: Cientista_5
       rect:
         serializedVersion: 2
-        x: 497
-        y: 81
-        width: 38
-        height: 40
+        x: 500
+        y: 160
+        width: 100
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -428,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6a8a9e41f038a7468c8ec8b01b9ac43
-      internalID: -405485040
+      spriteID: 06d1512fa45ac1949980b11cf99e166f
+      internalID: 1231347680
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fantasma_14
+      name: Cientista_6
       rect:
         serializedVersion: 2
-        x: 601
-        y: 80
-        width: 31
-        height: 39
+        x: 600
+        y: 160
+        width: 100
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -449,188 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 120d50cc31ac63c40aa14280b74d0a06
-      internalID: -1376090443
+      spriteID: cb242be2a2de0a94e95abb3ae7f1d1a7
+      internalID: 202688334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fantasma_15
-      rect:
-        serializedVersion: 2
-        x: 706
-        y: 80
-        width: 30
-        height: 38
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fbc0ba489444f8f469b975e9cce3aa0c
-      internalID: 1167544984
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_16
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 0
-        width: 18
-        height: 39
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fb1f8d1fffaae434cb0d83f6dee0a73c
-      internalID: -1836158835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_17
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 0
-        width: 22
-        height: 41
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3b47ead2152de6a4f8a180429a5404df
-      internalID: -1139530332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_18
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 0
-        width: 20
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 27bde2d5a03594145bca91815e412d5d
-      internalID: -861335916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_19
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 0
-        width: 22
-        height: 42
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 203a42cbc07dde74db59a59688b0dd92
-      internalID: -954975921
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_20
-      rect:
-        serializedVersion: 2
-        x: 404
-        y: 2
-        width: 24
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b27d0da775721c940815aadaf5ef51a3
-      internalID: 1099539047
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_21
-      rect:
-        serializedVersion: 2
-        x: 503
-        y: 5
-        width: 25
-        height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 257ef049ecef7854c94239efd210a857
-      internalID: 2040973381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_22
-      rect:
-        serializedVersion: 2
-        x: 601
-        y: 5
-        width: 27
-        height: 37
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1edb01337fe47fc4f8f5c577680f9074
-      internalID: 1303125567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Fantasma_23
+      name: Cientista_7
       rect:
         serializedVersion: 2
         x: 700
-        y: 1
-        width: 29
-        height: 42
+        y: 160
+        width: 100
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -638,8 +302,344 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a02351bb6ac9caa46a5a2d9a59caff4f
-      internalID: -104315553
+      spriteID: fbc55692239fafc4caf083c8907cd8e4
+      internalID: -286690524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 80
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a06f2f7670c4c14ebe88c26fda4199b
+      internalID: 213128376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_9
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 80
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c63230221a5ed4391f3b92543534f3
+      internalID: -1736827305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 80
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eff9ff8aa452684daa3686fea9ceaf4
+      internalID: 20221214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_11
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 80
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60852ba4528ec143905cbd6d1f8e71b
+      internalID: -1487795103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 80
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3826cd4b3a012ee43aa3a72a738eee27
+      internalID: -1144162660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_13
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 80
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db598e5063c3254386abcf57fec7e20
+      internalID: 719412154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 80
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9957e4409d4c52c4d9b355d9ba87f9b0
+      internalID: -1411301482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_15
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 80
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7f968a65db86c4db4dbb672031ae5c
+      internalID: 2042947579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92331bf703b871d47a94283e05b70bc7
+      internalID: -1259711778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46e5059a09cc584ea455800f16c527f
+      internalID: 793748096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_18
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081140c3f8197124fbe05e7c876a2efe
+      internalID: -2030186572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_19
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec8b894a00a6364ba85eb175c75fbce
+      internalID: -1420293640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_20
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c340ee87a1223d04da5d1dc06bfab1de
+      internalID: -1706672607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_21
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfad7886709a9ce4189621919dafa8b7
+      internalID: 82395586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cfecdb04c07084ea34d1c3ab8f5d07
+      internalID: -1345824433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cientista_23
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 100
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30beaf760f98284599c119730eef589
+      internalID: -1379418921
       vertices: []
       indices: 
       edges: []
@@ -655,30 +655,30 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Fantasma_21: 2040973381
-      Fantasma_0: 1807636601
-      Fantasma_18: -861335916
-      Fantasma_12: 1986021712
-      Fantasma_2: -1130936858
-      Fantasma_3: 101636187
-      Fantasma_6: -105351325
-      Fantasma_7: 1219989609
-      Fantasma_19: -954975921
-      Fantasma_11: 1062493307
-      Fantasma_10: 538963701
-      Fantasma_5: -1650719139
-      Fantasma_13: -405485040
-      Fantasma_1: -1777281220
-      Fantasma_8: 1943019024
-      Fantasma_15: 1167544984
-      Fantasma_9: 869493008
-      Fantasma_23: -104315553
-      Fantasma_4: -665445261
-      Fantasma_20: 1099539047
-      Fantasma_16: -1836158835
-      Fantasma_17: -1139530332
-      Fantasma_14: -1376090443
-      Fantasma_22: 1303125567
+      Cientista_18: -2030186572
+      Cientista_2: 14683588
+      Cientista_4: -740515056
+      Cientista_3: -1425609022
+      Cientista_7: -286690524
+      Cientista_15: 2042947579
+      Cientista_5: 1231347680
+      Cientista_8: 213128376
+      Cientista_13: 719412154
+      Cientista_20: -1706672607
+      Cientista_10: 20221214
+      Cientista_1: -1492058543
+      Cientista_9: -1736827305
+      Cientista_14: -1411301482
+      Cientista_23: -1379418921
+      Cientista_21: 82395586
+      Cientista_12: -1144162660
+      Cientista_16: -1259711778
+      Cientista_6: 202688334
+      Cientista_19: -1420293640
+      Cientista_0: 1155597346
+      Cientista_11: -1487795103
+      Cientista_22: -1345824433
+      Cientista_17: 793748096
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

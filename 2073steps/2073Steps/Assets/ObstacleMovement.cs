@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ObstacleMovement : MonoBehaviour
 {
-    public GameObject obstacle;
+    public GameObject hazardMaratonista;
+    public GameObject hazardCientista;
+    public GameObject hazardFantasmaSolido;
+    public GameObject hazardFantasmaFalso;
 
     private float gameSpeed;
 
@@ -18,8 +22,8 @@ public class ObstacleMovement : MonoBehaviour
 
     float rTime;
 
-    public GameObject oldObstacle;
-    public GameObject newObstacle;
+    public GameObject oldHazard;
+    private GameObject newHazard;
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +32,6 @@ public class ObstacleMovement : MonoBehaviour
         Camera cam = Camera.main;
         cameraHeight = 2f * cam.orthographicSize;
         cameraWidth = cameraHeight * cam.aspect;
-
-        //Start Invoke
-        //Invoke("generateObstacle", 1f);
     }
 
     // Update is called once per frame
@@ -41,23 +42,34 @@ public class ObstacleMovement : MonoBehaviour
 
         if(rTime >= 95f)
         {
-            
-
-            if((oldObstacle.transform.position.x - transform.position.x) < -5)
+            if((oldHazard.transform.position.x - transform.position.x) < -5)
             {
-                GameObject newObstacle = Instantiate(obstacle);
-                oldObstacle = newObstacle;
+                generateHazard(GameManager.current_character);
+                oldHazard = newHazard;
             }
-            //generateObstacle();
 
             if (transform.position.x <= -8)
             {
-                Destroy(newObstacle);
+                Destroy(newHazard);
             }
 
             timer = 0;
         }
+    }
 
-
+    void generateHazard(Character character)
+    {
+        if (character == Character.Maratonista)
+        {
+            newHazard = Instantiate(hazardMaratonista);
+        }
+        else if (character == Character.Fantasma)
+        {
+            newHazard = Instantiate(hazardFantasmaSolido);
+        }
+        else if (character == Character.Cientista)
+        {
+            newHazard = Instantiate(hazardCientista);
+        }
     }
 }

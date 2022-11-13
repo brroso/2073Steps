@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class FantasmaMovement : MonoBehaviour
@@ -10,7 +11,6 @@ public class FantasmaMovement : MonoBehaviour
     private bool m_grounded = false;
     float fallSpeed = 40;
     private Animator m_animator;
-    // Update is called once per frame
 
     void Start()
     {
@@ -70,6 +70,18 @@ public class FantasmaMovement : MonoBehaviour
         if (spriteRenderer != null)
         {
             spriteRenderer.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "ParedeSolida" & isTangible)
+        {
+            Debug.Log("Morreu solido");
+        }
+        else if (collision.gameObject.tag == "ParedeSolida" & !isTangible)
+        {
+            Debug.Log("Morreu liquido");
         }
     }
 }

@@ -76,3 +76,10 @@ public enum Character
     Cientista,
     Fantasma
 }
+
+public enum Hazard
+{
+    Obstaculo,
+    Espinho,
+    Parede
+}

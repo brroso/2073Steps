@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Background
+  - ParedeSolida
+  - ParedeFalsa
   layers:
   - Default
   - TransparentFX

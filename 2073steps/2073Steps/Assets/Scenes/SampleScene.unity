@@ -227,11 +227,6 @@ RectTransform:
   m_AnchoredPosition: {x: 32.5, y: 4.21}
   m_SizeDelta: {x: 10.82, y: 2.16}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &153691890 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8705638741780578787, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
-  m_PrefabInstance: {fileID: 1510044139}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &188603905
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,6 +435,11 @@ RectTransform:
   m_AnchoredPosition: {x: 10.87, y: 5.25}
   m_SizeDelta: {x: 10.82, y: 2.16}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &293107522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8705638741780578787, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
+  m_PrefabInstance: {fileID: 1462047745}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &310196710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1157,7 +1157,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &994601839
 MonoBehaviour:
@@ -1379,7 +1379,7 @@ RectTransform:
   m_AnchoredPosition: {x: 32.5, y: 5.77}
   m_SizeDelta: {x: 10.82, y: 2.16}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1001 &1510044139
+--- !u!1001 &1462047745
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1392,11 +1392,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8705638741780578784, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.86
+      value: 21.8
       objectReference: {fileID: 0}
     - target: {fileID: 8705638741780578784, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.01
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8705638741780578784, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1432,7 +1432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8705638741780578787, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
       propertyPath: m_Name
-      value: Obstacle
+      value: Bloco
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
@@ -2225,11 +2225,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daed936dbdec0ec4aa397d55a01c797a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obstacle: {fileID: 8705638741780578787, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
+  hazardMaratonista: {fileID: 8705638741780578787, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
+  hazardCientista: {fileID: 3108265629370383372, guid: cfb2844b4d717124ea96523174e39b20, type: 3}
+  hazardFantasmaSolido: {fileID: 5263926204170314845, guid: 9467b31545b950e4c90efc9efd364eab, type: 3}
+  hazardFantasmaFalso: {fileID: 5263926204170314845, guid: 750228bc5d0f28f4aa01ee711660ad13, type: 3}
   Countdown: 10
   waitingForNextSpawn: 10
-  oldObstacle: {fileID: 153691890}
-  newObstacle: {fileID: 0}
+  oldHazard: {fileID: 293107522}
 --- !u!1001 &2845244254916639444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2344,7 +2346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8705638741780578784, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.01
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8705638741780578784, guid: 292c1f9b13283ed49a49d29ebb4719b0, type: 3}
       propertyPath: m_LocalPosition.z

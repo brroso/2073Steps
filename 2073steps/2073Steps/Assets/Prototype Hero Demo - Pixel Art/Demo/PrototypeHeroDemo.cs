@@ -70,25 +70,19 @@ public class PrototypeHeroDemo : MonoBehaviour {
         // Escolhe a layer do Animator para o personagem desejado
         if (m_character == Character.Maratonista)
         {
-            m_animator.SetLayerWeight(1, 1);
-            m_animator.SetLayerWeight(0, 0);
-            m_animator.SetLayerWeight(2, 0);
+            AE_CharacterChange(1);
         }
         else if (m_character == Character.Fantasma)
         {
-            m_animator.SetLayerWeight(2, 1);
-            m_animator.SetLayerWeight(0, 0);
-            m_animator.SetLayerWeight(1, 0);
+            AE_CharacterChange(2);
         }
         else if (m_character == Character.Cientista)
         {
-
+            AE_CharacterChange(3);
         }
         else
         {
-            m_animator.SetLayerWeight(0, 1);
-            m_animator.SetLayerWeight(1, 0);
-            m_animator.SetLayerWeight(2, 0);
+            AE_CharacterChange(0);
         }
 
         //Run
@@ -143,5 +137,16 @@ public class PrototypeHeroDemo : MonoBehaviour {
         m_audioManager.PlaySound("Landing");
         // Spawn Dust
         SpawnDustEffect(m_LandingDust);
+    }
+
+    void AE_CharacterChange(int layer)
+    {
+        m_animator.SetLayerWeight(layer, 1);
+
+        for (int i = 0; i < 4; i++)
+        {
+            if (i != layer)
+                m_animator.SetLayerWeight(i, 0);
+        }
     }
 }
