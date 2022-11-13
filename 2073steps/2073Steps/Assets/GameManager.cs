@@ -25,10 +25,16 @@ public class GameManager : MonoBehaviour
 
     public static float minDistToAction = 200f;
 
+    public GameObject fadeEffectStart;
+    public GameObject fadeEffectEnd;
+    public float debugDistance;
+
     void Awake()
     {
         distanceUI = distanceUIObj;
         Instance = this;
+
+        distance += debugDistance;
     }
 
     void Start()
@@ -42,6 +48,20 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
+        /*// Para testar o efeito de fade com Ctrl.
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            fadeEffectStart.SetActive(true);
+            fadeEffectEnd.SetActive(true);
+        }*/
+
+        if (distance >= 2000 & distance > 0)
+        {
+            fadeEffectEnd.SetActive(false);
+            fadeEffectStart.SetActive(true);
+            fadeEffectEnd.SetActive(true);
+        }
+
         if (distance >= 2073 & distance > 0)
         {
             NextState();
@@ -101,8 +121,8 @@ public class GameManager : MonoBehaviour
 public enum Character
 {
     Maratonista,
-    Cientista,
-    Fantasma
+    Fantasma,
+    Cientista
 }
 
 public enum Hazard
