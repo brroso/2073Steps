@@ -41,7 +41,6 @@ public class ObstacleMovement : MonoBehaviour
     private void FixedUpdate()
     {
         distance = GameManager.distance;
-        Debug.Log(distance);
         rTime = Random.Range(0f, 100f);
 
         if(rTime >= 95f & (distance > 30 & distance < 180))

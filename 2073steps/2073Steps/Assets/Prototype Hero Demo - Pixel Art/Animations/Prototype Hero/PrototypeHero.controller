@@ -1,31 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-3969560387815499690
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Run_Fantasma
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 403b47a3e4f521b4886f1896cd003889, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1107 &-3766769336751132907
 AnimatorStateMachine:
   serializedVersion: 6
@@ -212,28 +186,28 @@ AnimatorController:
     m_Motions:
     - serializedVersion: 2
       m_State: {fileID: 110215012}
-      m_Motion: {fileID: 7400000, guid: 7297b00d6267ad14585602f5a472e674, type: 2}
+      m_Motion: {fileID: 0}
     - serializedVersion: 2
       m_State: {fileID: 110290548}
-      m_Motion: {fileID: 7400000, guid: 7297b00d6267ad14585602f5a472e674, type: 2}
+      m_Motion: {fileID: 7400000, guid: a213010f012206542967a0cbb33bc536, type: 2}
     - serializedVersion: 2
       m_State: {fileID: 1102379001521977246}
-      m_Motion: {fileID: 7400000, guid: 8bf061ba4093e1f4ab0874cb36f829b2, type: 2}
+      m_Motion: {fileID: 0}
     - serializedVersion: 2
       m_State: {fileID: 1102589304282959532}
-      m_Motion: {fileID: 7400000, guid: 5f511144564e9b54e8d1548353588815, type: 2}
+      m_Motion: {fileID: 0}
     - serializedVersion: 2
       m_State: {fileID: 1102999884274504608}
-      m_Motion: {fileID: 7400000, guid: 994cf65dc67cf8a4fb02d509f58beefd, type: 2}
+      m_Motion: {fileID: 0}
     - serializedVersion: 2
       m_State: {fileID: 1102752457226709052}
-      m_Motion: {fileID: 7400000, guid: ef50436d38c49304eb70cd8661d95a37, type: 2}
+      m_Motion: {fileID: 0}
     - serializedVersion: 2
       m_State: {fileID: 1102009571870106696}
-      m_Motion: {fileID: 7400000, guid: a65ae4367960d4f409ebad738d605bbf, type: 2}
+      m_Motion: {fileID: 0}
     - serializedVersion: 2
       m_State: {fileID: 1102940124560247288}
-      m_Motion: {fileID: 7400000, guid: 417bf34d0bc9e5e4185f36b0b782ff5a, type: 2}
+      m_Motion: {fileID: 0}
     m_Behaviours: []
     m_BlendingMode: 0
     m_SyncedLayerIndex: 0
@@ -357,9 +331,6 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: 1102999884274504608}
     m_Position: {x: 80, y: -180, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -3969560387815499690}
-    m_Position: {x: 115, y: -115, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1101151330442495434}

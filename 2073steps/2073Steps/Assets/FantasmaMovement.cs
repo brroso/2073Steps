@@ -78,12 +78,10 @@ public class FantasmaMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "ParedeSolida" & isTangible)
         {
-            Debug.Log("Morreu solido");
             GameManager.GameOver();
         }
         else if (collision.gameObject.tag == "ParedeSolida" & !isTangible)
         {
-            Debug.Log("Morreu liquido");
             GameManager.GameOver();
         }
     }

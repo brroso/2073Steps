@@ -17,7 +17,7 @@ public class ObstacleSpeed : MonoBehaviour
         transform.Translate(-gameSpeed * Time.deltaTime, 0f, 0f);
         
 
-        if (transform.position.x <= -100)
+        if (transform.position.x <= -30)
         {
             Destroy(gameObject);
         }

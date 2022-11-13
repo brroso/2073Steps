@@ -84,8 +84,8 @@ public class GameManager : MonoBehaviour
 
 public enum Character
 {
-    Fantasma,
     Cientista,
+    Fantasma,
     Maratonista
 }
 

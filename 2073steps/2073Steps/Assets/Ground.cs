@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ground : MonoBehaviour
 {
+    /*public GameObject roof;*/
     public float gameSpeed; // Velocidade em que o jogo se move.
     bool generatedGround = false;
 
@@ -11,10 +12,12 @@ public class Ground : MonoBehaviour
     float cameraWidth;
 
     private RectTransform groundRect;
+    /*private RectTransform roofRect;*/
 
     private void Start()
     {
-        groundRect= GetComponent<RectTransform>();
+        groundRect = GetComponent<RectTransform>();
+        /*roofRect = GetComponent<RectTransform>();*/
         
         Camera cam = Camera.main;
         cameraHeight = 2f * cam.orthographicSize;
@@ -36,9 +39,10 @@ public class Ground : MonoBehaviour
         }
 
         if (transform.position.x <= -(groundRect.rect.width / 2f))
-        {
             Destroy(gameObject);
-        }
+
+        /*if (roof.transform.position.x <= -(roofRect.rect.width / 2f))
+            Destroy(roof);*/
     }
 
     void generateGround()
@@ -51,5 +55,18 @@ public class Ground : MonoBehaviour
         pos.y = transform.position.y;
 
         gro.transform.position = pos;
+
+
+        /*if (GameManager.current_character == Character.Cientista)
+        {
+            GameObject roofInstance = Instantiate(roof);
+            BoxCollider2D roofCollider = roofInstance.GetComponent<BoxCollider2D>();
+            Vector2 posR;
+
+            posR.x = cameraWidth + (roofRect.rect.width / 2f) - (gameSpeed * Time.deltaTime);
+            posR.y = 10f;
+
+            roofInstance.transform.position = posR;
+        }*/
     }
 }

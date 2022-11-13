@@ -69,7 +69,6 @@ public class MaratonistaMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle")
         {
-            Debug.Log("Morreu Maratonista");
             GameManager.GameOver();
         }
     }
