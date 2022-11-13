@@ -43,7 +43,7 @@ public class ObstacleMovement : MonoBehaviour
         distance = GameManager.distance;
         rTime = Random.Range(0f, 100f);
 
-        if(rTime >= 95f & (distance > 30 & distance < 180))
+        if(rTime >= 95f & (distance > GameManager.minDistToSpawnObstacle & distance < GameManager.maxDistToSpawnObstacle))
         {
             if((lastHazard.transform.position.x - transform.position.x) < -5)
             {

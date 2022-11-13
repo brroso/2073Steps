@@ -18,7 +18,7 @@ public class PointCounter : MonoBehaviour
 
     private void IncrementDistance()
     {
-        GameManager.distance += GameManager.gameSpeed;
+        GameManager.distance += GameManager.gameSpeed * 10;
         distanceLabel.text = $"Distance: {GameManager.distance}";
     }
 }

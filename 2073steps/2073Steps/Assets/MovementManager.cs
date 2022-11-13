@@ -18,6 +18,21 @@ public class MovementManager : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetButtonDown("Jump") & GameManager.distance > GameManager.minDistToAction)
+        {
+            if (maratonistaScript.enabled)
+            {
+                maratonistaScript.action();
+            }
+            else if (cientistaScript.enabled)
+            {
+                cientistaScript.action();
+            }
+            else
+            {
+                fantasmaScript.action();
+            }
+        }
         
         current_character = GameManager.current_character;
         if (getCurrentActiveScript() != current_character)

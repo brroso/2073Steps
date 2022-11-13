@@ -23,13 +23,6 @@ public class CientistaMovement : MonoBehaviour
     void Update()
     {
         flipCharacter();
-        if (!c_paused & Input.GetButtonDown("Jump") & m_grounded)
-        {
-            m_animator.SetTrigger("Jump");
-            rb.gravityScale *= -1;
-            m_animator.SetFloat("AirSpeedY", -1);
-        }
-
         //Check if character just landed on the ground
         if (!m_grounded && m_groundSensor.State())
         {
@@ -46,6 +39,16 @@ public class CientistaMovement : MonoBehaviour
         }
 
         c_paused = GameManager.gameIsPaused;
+    }
+
+    public void action()
+    {
+        if (!c_paused & m_grounded)
+        {
+            m_animator.SetTrigger("Jump");
+            rb.gravityScale *= -1;
+            m_animator.SetFloat("AirSpeedY", -1);
+        }
     }
 
     public void flipCharacter()

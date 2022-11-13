@@ -30,29 +30,6 @@ public class FantasmaMovement : MonoBehaviour
     }
     void Update()
     {
-        if (!f_paused & Input.GetButtonDown("Jump"))
-        {
-            m_animator.SetTrigger("Jump");
-            m_animator.SetFloat("AirSpeedY", -1);
-            if (isTangible)
-            {
-                isTangible = false;
-                SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-                if (spriteRenderer != null)
-                {
-                    spriteRenderer.color = new Color(0f, (196f/255f), 1.0f, 0.5f);
-                }
-            }
-            else
-            {
-                isTangible = true;
-                SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-                if (spriteRenderer != null)
-                {
-                    spriteRenderer.color = new Color(1.0f, 1.0f, 1.0f, 1f);
-                }
-            }
-        }
         if (!m_grounded && m_groundSensor.State())
         {
             m_grounded = true;
@@ -67,6 +44,33 @@ public class FantasmaMovement : MonoBehaviour
         }
 
         f_paused = GameManager.gameIsPaused;
+    }
+
+    public void action()
+    {
+        if (!f_paused)
+        {
+            m_animator.SetTrigger("Jump");
+            m_animator.SetFloat("AirSpeedY", -1);
+            if (isTangible)
+            {
+                isTangible = false;
+                SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null)
+                {
+                    spriteRenderer.color = new Color(0f, (196f / 255f), 1.0f, 0.5f);
+                }
+            }
+            else
+            {
+                isTangible = true;
+                SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null)
+                {
+                    spriteRenderer.color = new Color(1.0f, 1.0f, 1.0f, 1f);
+                }
+            }
+        }
     }
 
     public void resetFantasma()

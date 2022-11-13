@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
     public static float gameSpeed = 7f;
+    public static float originalGameSpeed = 7f;
     public static Character current_character;
     public static Character next_character;
     public static List<Character> characters;
@@ -18,6 +19,11 @@ public class GameManager : MonoBehaviour
     public static GameObject distanceUI;
     public static bool gameJustStarted = true;
     public GameObject distanceUIObj;
+
+    public static float minDistToSpawnObstacle = 280f;
+    public static float maxDistToSpawnObstacle = 1793f;
+
+    public static float minDistToAction = 200f;
 
     void Awake()
     {
@@ -36,7 +42,7 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (distance >= 50 & distance > 0)
+        if (distance >= 2073 & distance > 0)
         {
             NextState();
             distance = 0;
@@ -84,8 +90,11 @@ public class GameManager : MonoBehaviour
         next_character = characters[0];
         characters.RemoveAt(0);
         distance = 0;
+        distanceUI.SetActive(false);
+        gameIsPaused = true;
+        gameJustStarted = true;
+        gameSpeed = originalGameSpeed;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
     }
 }
 
